@@ -1,1 +1,0 @@
-# nextvibe-studio
