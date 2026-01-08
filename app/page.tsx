@@ -1,15 +1,25 @@
 import Navbar from '@/components/Header'
 
-
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main>
+
       <Navbar />
-      <div className="min-h-screen bg-[#3974B8] flex items-center justify-center">
-        <h1 className="text-white text-4xl font-bold">
-          Bienvenue sur NextVibe !
-        </h1>
-      </div>
-    </div>
+
+      <section
+        className="h-[calc(100vh-3rem)] bg-cover bg-center"
+        style={{ backgroundImage: "url('/home.jpg')" }}
+      >
+        <div className="h-full flex flex-col items-center justify-center text-center">
+          <h1 className="text-6xl font-bold mb-4">
+            Bienvenue sur ma vitrine !
+          </h1>
+          <p className="text-lg max-w-xl">
+            Découvrez nos services et explorez notre univers.
+          </p>
+        </div>
+      </section>
+
+    </main>
   )
 }
